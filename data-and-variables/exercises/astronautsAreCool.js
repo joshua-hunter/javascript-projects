@@ -1,0 +1,54 @@
+//const input = require('readline-sync');
+let date = 'Monday 2019-03-08';
+let time = '10:05:34AM';
+let astronautCount = 7;//Number(input.question("How many Astronauts are ready to begin the trainning?"));
+let astronautStatus = 'ready';
+let averageAstronautMassKg = 80.7;
+let crewMassKg = astronautCount * averageAstronautMassKg;
+let fuelMassKg = 760000;
+let shuttleMassKg = 74842.31;
+let totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
+let fuelTempCelsius = -225;
+let fuelLevel = 100;
+let weatherStatus = 'clear';
+let thirtySevenDashes = "-------------------------------------";
+let heckYeah = "YES";
+
+
+console.log(thirtySevenDashes);
+console.log(" > LC04 LAUNCH CHECKLIST");
+console.log(thirtySevenDashes);
+console.log(date);
+console.log(time);
+console.log(" ");
+console.log(thirtySevenDashes);
+console.log(" > ASTRONAUT INFO");
+console.log(thirtySevenDashes);
+console.log("* count:" + " " + astronautCount);
+console.log("* status:" + " " + astronautStatus );
+console.log(" ");
+console.log(thirtySevenDashes);
+console.log(" > FUEL DATA");
+console.log(thirtySevenDashes);
+console.log("* Fuel temp celsius:" + fuelTempCelsius );
+console.log("* Fuel level:" + " " + fuelLevel + "%");
+console.log(" ");
+console.log(thirtySevenDashes);
+console.log("> MASS DATA");
+console.log(thirtySevenDashes);
+console.log("* Crew mass:" + " " + crewMassKg + " " + "kg");
+console.log("* Fuel mass:" + " " + fuelMassKg + " " + "kg");
+console.log("* Shuttle mass:" + " " + shuttleMassKg + " " + "kg");
+console.log("* Total mass:" + " " + totalMassKg + " " + "kg");
+
+console.log(" ");
+console.log(thirtySevenDashes);
+console.log("> FLIGHT PLAN");
+console.log(thirtySevenDashes);
+console.log("* weather:" + " " + weatherStatus);
+console.log(" ");
+console.log(thirtySevenDashes);
+console.log("> OVERALL STATUS");
+console.log(thirtySevenDashes);
+
+console.log("* Clear for takeoff:" + " " + heckYeah);
